@@ -90,8 +90,7 @@ public class Main {
      public static int boxSeq(int step) {
          if (step == 1) return 3;
          else if (step % 2 == 1) return boxSeq(step - 1) + 3;
-         else if (step % 2 == 0 && step > 0) return boxSeq(step - 1) - 1;
+         else if (step % 2 == 0 && step != 0) return boxSeq(step - 1) - 1;
          else return 0;
-
      }
 }
